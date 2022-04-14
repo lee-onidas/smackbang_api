@@ -26,10 +26,10 @@ auth.set_access_token(accessToken, accessTokenSecret)
 api = tweepy.API(auth)
 
 #Sample DataFrame please edit!
-matches_df = get_matches(origin_one='NRT', origin_two='SYD', departure_date='01/04/2022', continent='AS', return_date='', currency='USD')
+#matches_df = get_matches(origin_one='LHR', origin_two='CDG', departure_date='01/12/2022', continent='EU', return_date='', currency='USD')
 
 #List of sample cities from matches_df
-city_list = matches_df.index.values
+#city_list = matches_df.index.values
 
 #Sentiment Analysis
 

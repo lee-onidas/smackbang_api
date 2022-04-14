@@ -49,7 +49,7 @@ def city_locations(cities='SIN,KUL,NYC'):
     return result
 
 @app.get("/matches")
-def matches(origin_one='NRT', origin_two='SYD', departure_date='01/04/2022', continent='AS', return_date='', currency='USD'):
+def matches(origin_one='LHR', origin_two='CDG', departure_date='01/12/2022', continent='EU', return_date='', currency='USD'):
     matches_df = get_matches(origin_one, origin_two, departure_date, continent, return_date, currency)
     matches_df.columns = ['_'.join(col) for col in matches_df.columns.values]
     result  = matches_df.to_dict(orient='dict')
